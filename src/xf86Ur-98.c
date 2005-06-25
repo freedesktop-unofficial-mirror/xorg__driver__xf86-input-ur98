@@ -676,7 +676,7 @@ init_err:
 #ifdef XFree86LOADER
 static
 #endif
-InputDriverRec UR98 = {
+_X_EXPORT InputDriverRec UR98 = {
 	1,			/* driver version */
 	"ur98",			/* driver name */
 	NULL,			/* identify */
@@ -716,6 +716,6 @@ static XF86ModuleVersionInfo version_rec = {
  * is setup after the pattern <module_name>ModuleData.
  * Do not change it.
  */
-XF86ModuleData ur98ModuleData = { &version_rec, Plug, Unplug };
+_X_EXPORT XF86ModuleData ur98ModuleData = { &version_rec, Plug, Unplug };
 #endif
 
