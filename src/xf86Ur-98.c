@@ -673,9 +673,6 @@ init_err:
 	return NULL;
 }
 
-#ifdef XFree86LOADER
-static
-#endif
 _X_EXPORT InputDriverRec UR98 = {
 	1,			/* driver version */
 	"ur98",			/* driver name */
