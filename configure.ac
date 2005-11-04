@@ -85,6 +85,8 @@ AC_SUBST([CFLAGS])
 
 # Checks for header files.
 AC_HEADER_STDC
+AC_CHECK_HEADER([linux/joystick.h], [],
+		[AC_MSG_ERROR([<linux/joystick.h> is required])])
 
 XORG_MANPAGE_SECTIONS
 XORG_RELEASE_VERSION
